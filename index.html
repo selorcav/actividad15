@@ -2,22 +2,69 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Semana 9 - Actividad presencial 1 - API Clima</title>
+	<title>Semana 9 - Actividad presencial 1 - API Dolar</title>
 	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<label for="exampleFormControlInput1">Valor en Pesos</label>
+				<input class="valorpeso" type="name" placeholder="Ingresa valor">
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th>Valor Dolar</th>
+							<th>Valor Euro</th>
+							<th>Valor UF</th>
+							<th>Valor UTM</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="dolarresult" ></td>
+							<td class="euroresult"></td>
+							<td class="ufresult" ></td>
+							<td class="utmresult"></td>
+						</tr>
+					</tbody>
+					<input type="submit" value="Convertir" class="btn btn-info">	
+				</div>
+			<div class="col-md-4">
+					<h3>Indicadores</h3>
+					<table class="table table-dark">
+						<thead>
+							<tr>
+								<th>Valor Dolar</th>
+								<th>Valor Euro</th>
+								<th>Valor UF</th>
+								<th>Valor UTM</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="dolar"></td>
+								<td class="Euro"></td>
+								<td class="uf"></td>
+								<td class="utm"></td>
+							</tr>
+						</tbody>
 
-	
 
-	<!-- Bootstrap Script -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!-- Jquery Script -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+					</table>
+				</div>
+			</div>
+		</div>
 
 
-</body>
-</html>
+		<!-- Jquery Script -->
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+
+
+	</body>
+	</html>
